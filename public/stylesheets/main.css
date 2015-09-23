@@ -1,0 +1,42 @@
+#logo {
+  color: white;
+  display: flex;
+  width: 300px; }
+
+.flexnav {
+  display: flex;
+  width: 100%;
+  background-color: pink; }
+  .flexnav nav {
+    display: flex;
+    width: 100%;
+    align-content: stretch; }
+    .flexnav nav .link {
+      display: flex;
+      border: blue 5px solid;
+      background-color: red;
+      -webkit-transition: all ease 1s;
+      -moz-transition: all ease 1s;
+      transition: all ease 1s; }
+      .flexnav nav .link:hover {
+        background-color: #800000; }
+      .flexnav nav .link a {
+        margin: 30px;
+        color: white; }
+    .flexnav nav .profile {
+      display: flex;
+      background-color: yellow;
+      margin-left: auto;
+      display: flex; }
+      .flexnav nav .profile .image {
+        align-self: center; }
+        .flexnav nav .profile .image img {
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          margin-right: 10px; }
+      .flexnav nav .profile .name {
+        display: flex;
+        background-color: red;
+        align-self: center;
+        color: blue; }

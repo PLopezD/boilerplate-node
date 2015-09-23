@@ -1,0 +1,55 @@
+#logo{
+	color:white;
+	display:flex;
+	width:300px;
+}
+.flexnav{
+	display:flex;
+	width:100%;
+	background-color:pink;
+	nav{
+		display:flex;
+		width:100%;
+		align-content:stretch;
+		
+		.link{
+			display: flex;			
+			border:blue 5px solid;
+			background-color:red;
+			-webkit-transition: all ease 1s;
+			-moz-transition: all ease 1s;
+			transition: all ease 1s;
+			&:hover{
+				background-color:#800000;
+			}
+			a{
+				margin:30px;
+				color:white;
+			}
+		}
+		.profile{
+			display:flex;
+			background-color:yellow;
+			margin-left:auto;
+			display: flex;
+			.image {
+				align-self:center;
+
+				img{
+					border-radius: 50%;
+					height:50px;
+					width:50px;
+					margin-right: 10px;
+				}
+			}
+			.name{
+				display:flex;
+				background-color: red;
+				align-self:center;
+				color:blue;
+			}
+		}
+	}
+}
+
+// http://www.lynda.com/CSS-tutorials/Flex-item-margins/116352/139401-4.html   @@@@@8:00

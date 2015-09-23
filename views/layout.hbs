@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel='stylesheet' href='/stylesheets/main.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='/stylesheets/normalize.css' type='text/css' media='all' />
+	
+</head>
+<body class="custom-font-enabled">
+
+	<!-- BEGIN page-specific content -->
+	<div >
+		{{> nav }}
+	</div>	
+	<div class="container">
+		{{{body}}}
+	</div>
+	<!-- END page-specific content -->
+	<div ng-app="app" class="ang">
+		<div ng-view></div>	
+	</div>
+	<script src="/bower/angular/angular.min.js"></script>
+	<script src="/bower/angular-route/angular-route.min.js"></script>
+	{{#if settings.production}}
+	<script src="/js/build/rtr.min.js?v=2"></script>
+	{{else}}
+	<script src="/js/app/app.js"></script>
+	<script src="/js/app/route-config.js"></script>
+	<script src="/js/app/home/home.js"></script>
+	<script src="/js/addition.js"></script>
+	{{/if}}
+</div>
+</div>
+</div>    
+</div>
+</div>
+</div>
+<script>
+	console.log({{test.title}})
+	console.log("connect")
+</script>
+</div>        
+</body>
+</html>
